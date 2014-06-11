@@ -1,0 +1,4 @@
+libtoolize --force && aclocal && automake -fac && autoconf
+./configure
+make
+make install
