@@ -1,10 +1,12 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_INIT(wordcut/wordcut_mkdict.c)
 AM_INIT_AUTOMAKE(wordcut,0.5.1b2_cvs`date +%Y%m%d`)
+AC_CONFIG_MACRO_DIR([m4])
 AC_SUBST(VERSION)
 
 dnl Checks for programs.
 AC_PROG_CC
+AM_PROG_CC_C_O
 AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MAKE_SET
